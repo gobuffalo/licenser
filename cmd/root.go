@@ -28,7 +28,6 @@ var rootCmd = &cobra.Command{
 	RunE: func(cmd *cobra.Command, args []string) error {
 		r := genny.WetRunner(context.Background())
 		if rootOpts.dryRun {
-			fmt.Println("using the dry runner")
 			r = genny.DryRunner(context.Background())
 		}
 		opts := rootOpts.Options
