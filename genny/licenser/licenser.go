@@ -1,7 +1,6 @@
 package licenser
 
 import (
-	"bytes"
 	"path/filepath"
 
 	"github.com/gobuffalo/genny"
@@ -29,11 +28,11 @@ func New(opts *Options) (*genny.Generator, error) {
 		return g, errors.WithStack(err)
 	}
 
-	body, err := box.MustBytes(opts.Name)
+	body, err := box.Find(opts.Name)
 	if err != nil {
 		return g, errors.Errorf("could not find a license named %s", opts.Name)
 	}
-	g.File(genny.NewFile("LICENSE.plush", bytes.NewReader(body)))
+	g.File(genny.NewFileB("LICENSE.plush", body))
 
 	ctx := plush.NewContext()
 	ctx.Set("opts", opts)
