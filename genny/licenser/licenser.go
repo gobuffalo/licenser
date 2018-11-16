@@ -5,17 +5,18 @@ import (
 
 	"github.com/gobuffalo/genny"
 	"github.com/gobuffalo/genny/movinglater/plushgen"
+	"github.com/gobuffalo/packd"
 	"github.com/gobuffalo/packr"
 	"github.com/gobuffalo/plush"
 	"github.com/pkg/errors"
 )
 
 var Available []string
-var box packr.Box
+var box packd.Box
 
 func init() {
 	box = packr.NewBox("../licenser/templates")
-	box.Walk(func(path string, f packr.File) error {
+	box.Walk(func(path string, f packd.File) error {
 		name := filepath.Base(path)
 		Available = append(Available, name)
 		return nil
