@@ -71,8 +71,9 @@ github.com/gobuffalo/genny v0.0.0-20181106193839-7dcb0924caf1/go.mod h1:x61yHxvb
 github.com/gobuffalo/genny v0.0.0-20181107223128-f18346459dbe/go.mod h1:utQD3aKKEsdb03oR+Vi/6ztQb1j7pO10N3OBoowRcSU=
 github.com/gobuffalo/genny v0.0.0-20181114215459-0a4decd77f5d/go.mod h1:kN2KZ8VgXF9VIIOj/GM0Eo7YK+un4Q3tTreKOf0q1ng=
 github.com/gobuffalo/genny v0.0.0-20181119162812-e8ff4adce8bb/go.mod h1:BA9htSe4bZwBDJLe8CUkoqkypq3hn3+CkoHqVOW718E=
-github.com/gobuffalo/genny v0.0.0-20181127225641-2d959acc795b h1:Ncvhe72MgVeMKvlHTuoG6hKRwb2k12kcgTcWwW3uj94=
 github.com/gobuffalo/genny v0.0.0-20181127225641-2d959acc795b/go.mod h1:l54xLXNkteX/PdZ+HlgPk1qtcrgeOr3XUBBPDbH+7CQ=
+github.com/gobuffalo/genny v0.0.0-20181128191930-77e34f71ba2a h1:8r5ZmyuxRGeiTpPjmTAiLUQ9mp1kjBL/sZ/j4xjJhZA=
+github.com/gobuffalo/genny v0.0.0-20181128191930-77e34f71ba2a/go.mod h1:FW/D9p7cEEOqxYA71/hnrkOWm62JZ5ZNxcNIVJEaWBU=
 github.com/gobuffalo/github_flavored_markdown v1.0.4/go.mod h1:uRowCdK+q8d/RF0Kt3/DSalaIXbb0De/dmTqMQdkQ4I=
 github.com/gobuffalo/github_flavored_markdown v1.0.5/go.mod h1:U0643QShPF+OF2tJvYNiYDLDGDuQmJZXsf/bHOJPsMY=
 github.com/gobuffalo/github_flavored_markdown v1.0.7 h1:Vjvz4wqOnviiLEfTh5bh270b3lhpJiwwQEWOWmHMwY8=
@@ -146,8 +147,9 @@ github.com/gobuffalo/shoulders v1.0.1/go.mod h1:V33CcVmaQ4gRUmHKwq1fiTXuf8Gp/qjQ
 github.com/gobuffalo/syncx v0.0.0-20181120191700-98333ab04150/go.mod h1:HhnNqWY95UYwwW3uSASeV7vtgYkT2t16hJgV3AEPUpw=
 github.com/gobuffalo/syncx v0.0.0-20181120194010-558ac7de985f h1:S5EeH1reN93KR0L6TQvkRpu9YggCYXrUqFh1iEgvdC0=
 github.com/gobuffalo/syncx v0.0.0-20181120194010-558ac7de985f/go.mod h1:HhnNqWY95UYwwW3uSASeV7vtgYkT2t16hJgV3AEPUpw=
-github.com/gobuffalo/tags v2.0.11+incompatible h1:zLkaontB8lWefU+DX38mzPLRKFGTJL8FKb9JnKMt0Z0=
 github.com/gobuffalo/tags v2.0.11+incompatible/go.mod h1:9XmhOkyaB7UzvuY4UoZO4s67q8/xRMVJEaakauVQYeY=
+github.com/gobuffalo/tags v2.0.14+incompatible h1:RbcLAfomSsAIM+47dnwtAn/DYZyNaXpF72j1P3t6rmw=
+github.com/gobuffalo/tags v2.0.14+incompatible/go.mod h1:9XmhOkyaB7UzvuY4UoZO4s67q8/xRMVJEaakauVQYeY=
 github.com/gobuffalo/uuid v2.0.3+incompatible/go.mod h1:ErhIzkRhm0FtRuiE/PeORqcw4cVi1RtSpnwYrxuvkfE=
 github.com/gobuffalo/uuid v2.0.4+incompatible/go.mod h1:ErhIzkRhm0FtRuiE/PeORqcw4cVi1RtSpnwYrxuvkfE=
 github.com/gobuffalo/uuid v2.0.5+incompatible h1:c5uWRuEnYggYCrT9AJm0U2v1QTG7OVDAvxhj8tIV5Gc=

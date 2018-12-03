@@ -15,7 +15,7 @@ var Available []string
 var box packd.Box
 
 func init() {
-	box = packr.New("licenser:genny:licenser", "../licenser/templates")
+	box = packr.New("github.com/gobuffalo/licenser/genny/licenser/templates", "../licenser/templates")
 	box.Walk(func(path string, f packd.File) error {
 		name := filepath.Base(path)
 		Available = append(Available, name)
