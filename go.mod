@@ -1,7 +1,5 @@
 module github.com/gobuffalo/licenser
 
-go 1.12
-
 require (
 	github.com/gobuffalo/genny v0.1.1
 	github.com/gobuffalo/packd v0.1.0

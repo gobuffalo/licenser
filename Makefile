@@ -3,7 +3,7 @@ GO_BIN ?= go
 
 install:
 	packr2
-	$(GO_BIN) install -tags ${TAGS} -v .
+	$(GO_BIN) install -tags ${TAGS} -v ./.
 	make tidy
 
 tidy:
@@ -26,7 +26,7 @@ build:
 
 test:
 	packr2
-	$(GO_BIN) test -tags ${TAGS} ./...
+	$(GO_BIN) test -cover -tags ${TAGS} ./...
 	make tidy
 
 ci-deps:
