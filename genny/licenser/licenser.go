@@ -1,14 +1,14 @@
 package licenser
 
 import (
+	"fmt"
 	"path/filepath"
 
 	"github.com/gobuffalo/genny"
+	"github.com/gobuffalo/genny/plushgen"
 	"github.com/gobuffalo/packd"
 	"github.com/gobuffalo/packr/v2"
 	"github.com/gobuffalo/plush"
-	"github.com/gobuffalo/plushgen"
-	"github.com/pkg/errors"
 )
 
 var Available []string
@@ -26,12 +26,12 @@ func init() {
 func New(opts *Options) (*genny.Generator, error) {
 	g := genny.New()
 	if err := opts.Validate(); err != nil {
-		return g, errors.WithStack(err)
+		return g, err
 	}
 
 	body, err := box.Find(opts.Name)
 	if err != nil {
-		return g, errors.Errorf("could not find a license named %s", opts.Name)
+		return g, fmt.Errorf("could not find a license named %s", opts.Name)
 	}
 	g.File(genny.NewFileB("LICENSE.plush", body))
 

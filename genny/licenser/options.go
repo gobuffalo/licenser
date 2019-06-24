@@ -4,8 +4,6 @@ import (
 	"os/user"
 	"strings"
 	"time"
-
-	"github.com/pkg/errors"
 )
 
 type Options struct {
@@ -27,7 +25,7 @@ func (opts *Options) Validate() error {
 	if opts.Author == "" {
 		u, err := user.Current()
 		if err != nil {
-			return errors.WithStack(err)
+			return err
 		}
 		opts.Author = strings.TrimSpace(u.Name)
 		if opts.Author == "" {
