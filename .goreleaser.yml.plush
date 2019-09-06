@@ -6,7 +6,7 @@ builds:
     - windows
   env:
     - CGO_ENABLED=0
-  main: main.go
+  main: ./cmd/licenser/main.go
 
 checksum:
   name_template: 'checksums.txt'
@@ -23,6 +23,6 @@ changelog:
 <%= if (brew) { %>
 brew:
   github:
-    owner: markbates
+    owner: gobuffalo
     name: homebrew-tap
 <% } %>
