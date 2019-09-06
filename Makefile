@@ -54,7 +54,7 @@ release-test: packr
 release:
 	$(GO_BIN) get github.com/gobuffalo/release
 	make tidy
-	release -y -f version.go
+	release -y -f cmd/licenser/version.go
 	make tidy
 
 packr:
