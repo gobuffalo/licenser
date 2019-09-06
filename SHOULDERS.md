@@ -13,6 +13,4 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/plush](https://godoc.org/github.com/gobuffalo/plush)
 
-* [github.com/spf13/cobra](https://godoc.org/github.com/spf13/cobra)
-
 * [github.com/stretchr/testify](https://godoc.org/github.com/stretchr/testify)

@@ -2,7 +2,7 @@ TAGS ?= ""
 GO_BIN ?= "go"
 
 install: packr
-	$(GO_BIN) install -tags ${TAGS} -v ./cmd/licenser
+	cd ./cmd/licenser; $(GO_BIN) install -tags ${TAGS} -v .
 	make tidy
 
 tidy:
@@ -54,7 +54,7 @@ release-test: packr
 release:
 	$(GO_BIN) get github.com/gobuffalo/release
 	make tidy
-	release -y -f version.go 
+	release -y -f version.go
 	make tidy
 
 packr:
